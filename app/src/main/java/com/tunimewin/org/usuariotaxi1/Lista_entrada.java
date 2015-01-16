@@ -13,6 +13,8 @@ public class Lista_entrada  extends Activity{
     private int idImagen;
     //crea la variable donde se pondra el teto de encima
     private String textoEncima;
+    //creamos el teto del medio
+    private String testomedio;
     // crea el texo donde se pondra el texto de abajo
     private String textoDebajo;
 

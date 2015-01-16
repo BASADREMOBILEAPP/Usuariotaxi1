@@ -20,16 +20,17 @@ public class MainActivity extends ActionBarActivity {
 
     // creaa una varible   privada
     private ListView lista;
-    //
+    //esta es la  funcion  es principal y crusial
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        // nos manda al layout principal
         setContentView(R.layout.listado);
 
-
+        //creamos un array para los paramentros
         ArrayList<Lista_entrada> datos = new ArrayList<Lista_entrada>();
 
-        datos.add(new Lista_entrada(R.drawable.user, "juanito", "en  su casa"));
+        datos.add(new Lista_entrada(R.drawable.user, "juanito", "en  su casa", "el tiempo estimado es de 1 hora"));
         datos.add(new Lista_entrada(R.drawable.user, "julio", "ciudad  de los unicornios donde vive piter pan hijo de campanita"));
         datos.add(new Lista_entrada(R.drawable.user, "tunime", "las americas M.W lt.11"));
         lista = (ListView) findViewById(R.id.ListView_listado);
