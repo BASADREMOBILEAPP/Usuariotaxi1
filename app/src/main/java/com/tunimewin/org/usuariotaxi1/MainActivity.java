@@ -31,8 +31,8 @@ public class MainActivity extends ActionBarActivity {
         ArrayList<Lista_entrada> datos = new ArrayList<Lista_entrada>();
 
         datos.add(new Lista_entrada(R.drawable.user, "juanito", "en  su casa", "el tiempo estimado es de 1 hora"));
-        datos.add(new Lista_entrada(R.drawable.user, "julio", "ciudad  de los unicornios donde vive piter pan hijo de campanita"));
-        datos.add(new Lista_entrada(R.drawable.user, "tunime", "las americas M.W lt.11"));
+        datos.add(new Lista_entrada(R.drawable.user, "julio", "ciudad  de los unicornios donde vive piter pan hijo de campanita", "el tiempo estimado es de 1 hora"));
+        datos.add(new Lista_entrada(R.drawable.user, "tunime", "las americas M.W lt.11", "el tiempo estimado es de 1 hora"));
         lista = (ListView) findViewById(R.id.ListView_listado);
         lista.setAdapter(new Lista_adaptador(this, R.layout.entrada, datos){
             @Override
