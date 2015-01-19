@@ -19,17 +19,19 @@ public abstract class Lista_adaptador extends BaseAdapter {
     private ArrayList<?> entradas;
     private int R_layout_IdView;
     private Context contexto;
-    private Context direccion;
+
 
     //esta funcion   donde se pondran los datos
-    public Lista_adaptador(Context contexto,Context direccion, int R_layout_IdView, ArrayList<?> entradas) {
+    public Lista_adaptador(Context contexto, int R_layout_IdView, ArrayList<?> entradas) {
         super();
         //donde entraran los id y lo demas de los layouts
         this.contexto = contexto;
-        this.direccion = direccion;
         this.entradas = entradas;
         this.R_layout_IdView = R_layout_IdView;
     }
+
+
+
 
     @Override
     public View getView(int posicion, View view, ViewGroup pariente) {

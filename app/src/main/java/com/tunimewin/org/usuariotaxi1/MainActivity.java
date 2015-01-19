@@ -46,6 +46,10 @@ public class MainActivity extends ActionBarActivity {
                     if (texto_inferior_entrada != null)
                         texto_inferior_entrada.setText(((Lista_entrada) entrada).get_textoDebajo());
 
+                    TextView texto_medio_entrada = (TextView) view.findViewById(R.id.textView_medio);
+                    if (texto_medio_entrada != null)
+                        texto_medio_entrada.setText(((Lista_entrada) entrada).get_textomedio());
+
                     ImageView imagen_entrada = (ImageView) view.findViewById(R.id.imageView_imagen);
                     if (imagen_entrada != null)
                         imagen_entrada.setImageResource(((Lista_entrada) entrada).get_idImagen());
