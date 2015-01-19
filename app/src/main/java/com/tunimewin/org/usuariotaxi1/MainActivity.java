@@ -16,7 +16,7 @@ import android.widget.Toast;
 import java.util.ArrayList;
 
 
-public class MainActivity extends ActionBarActivity {
+public class MainActivity extends Activity {
 
     // creaa una varible   privada
     private ListView lista;

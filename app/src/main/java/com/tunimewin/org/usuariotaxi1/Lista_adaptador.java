@@ -20,7 +20,6 @@ public abstract class Lista_adaptador extends BaseAdapter {
     private int R_layout_IdView;
     private Context contexto;
 
-
     //esta funcion   donde se pondran los datos
     public Lista_adaptador(Context contexto, int R_layout_IdView, ArrayList<?> entradas) {
         super();
@@ -29,9 +28,6 @@ public abstract class Lista_adaptador extends BaseAdapter {
         this.entradas = entradas;
         this.R_layout_IdView = R_layout_IdView;
     }
-
-
-
 
     @Override
     public View getView(int posicion, View view, ViewGroup pariente) {
