@@ -10,6 +10,7 @@ import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ImageView;
 import android.widget.ListView;
+import android.graphics.Typeface;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -18,6 +19,7 @@ import java.util.ArrayList;
 
 public class MainActivity extends Activity {
 
+    protected TextView customFont;
     // creaa una varible   privada
     private ListView lista;
     //esta es la  funcion  es principal y crusial
@@ -26,6 +28,10 @@ public class MainActivity extends Activity {
         super.onCreate(savedInstanceState);
         // nos manda al layout principal
         setContentView(R.layout.listado);
+
+        customFont = (TextView)findViewById(R.id.textView_superior);
+        Typeface font = Typeface.createFromAsset(getAssets(),"._Roboto-Black.ttf");
+        customFont.setTypeface(font);
 
         //creamos un array para los paramentros
         ArrayList<Lista_entrada> datos = new ArrayList<Lista_entrada>();
