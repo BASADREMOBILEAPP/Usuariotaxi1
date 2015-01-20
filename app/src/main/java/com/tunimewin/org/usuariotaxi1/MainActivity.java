@@ -30,7 +30,7 @@ public class MainActivity extends Activity {
         setContentView(R.layout.listado);
 
         customFont = (TextView)findViewById(R.id.textView_superior);
-        Typeface font = Typeface.createFromAsset(getAssets(),"._Roboto-Black.ttf");
+        Typeface font = Typeface.createFromAsset(getAssets(),"Roboto-Italic.ttf");
         customFont.setTypeface(font);
 
         //creamos un array para los paramentros
