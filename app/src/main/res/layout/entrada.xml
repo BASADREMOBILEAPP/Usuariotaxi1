@@ -6,6 +6,7 @@
     >
 
     <ImageView
+
         android:id="@+id/imageView_imagen"
         android:layout_width="80dp"
         android:layout_height="80dp"
@@ -32,13 +33,12 @@
 
         <TextView
             android:id="@+id/textView_medio"
-            style="@style/MyTextStyle0.LargeFont"
-            android:text="la direccion de juanito"
-            android:textSize="18sp"/>
+            style="@style/MyTextStyle2"
+            android:text="la direccion de juanito"/>
 
         <TextView
             android:id="@+id/textView_inferior"
-            style="@style/MyTextStyle2"
+            style="@style/MyTextStyle2.LargeFont"
             android:text="el tiempo de legada"
             android:textAppearance="?android:attr/textAppearanceSmall" />
 
