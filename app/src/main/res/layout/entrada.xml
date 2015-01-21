@@ -3,7 +3,7 @@
     android:layout_width="fill_parent"
     android:layout_height="wrap_content"
     android:orientation="horizontal"
-    android:background="#57131313">
+    >
 
     <ImageView
         android:id="@+id/imageView_imagen"
@@ -15,6 +15,7 @@
         android:src="@android:drawable/ic_menu_gallery" />
 
     <LinearLayout
+
         android:layout_width="fill_parent"
         android:layout_height="match_parent"
         android:paddingTop="4dp"
@@ -24,23 +25,20 @@
         android:orientation="vertical">
 
         <TextView
+            style="@style/MyTextStyle0"
             android:id="@+id/textView_superior"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
             android:text="el nobre de juanito"
             android:textAppearance="?android:attr/textAppearanceLarge" />
 
         <TextView
             android:id="@+id/textView_medio"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            style="@style/MyTextStyle0.LargeFont"
             android:text="la direccion de juanito"
             android:textSize="18sp"/>
 
         <TextView
             android:id="@+id/textView_inferior"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            style="@style/MyTextStyle2"
             android:text="el tiempo de legada"
             android:textAppearance="?android:attr/textAppearanceSmall" />
 
